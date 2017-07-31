@@ -1,4 +1,4 @@
-# CuteChute
+# Cute Chute
 LD39 Compo Submission
 
 ![Title](https://raw.githubusercontent.com/matthewvroman/CuteChute/master/Images/cover_01.png "Game Title")
