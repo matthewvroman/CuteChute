@@ -86,6 +86,8 @@ public class Grabbable : Sortable {
 		{
 			OnGrabbed(this);
 		}
+
+		AudioManager.Instance.PlayGrab();
 	}
 
 	public void Throw(Vector2 velocity, float groundPos)
@@ -94,6 +96,8 @@ public class Grabbable : Sortable {
 		m_throwVelocity = velocity;
 		m_throwStartVelocity = m_throwVelocity;
 		m_groundPos = groundPos;
+
+		AudioManager.Instance.PlayThrow();
 	}
 
 	public void OnTriggerEnter2D(Collider2D collider)
@@ -123,6 +127,8 @@ public class Grabbable : Sortable {
 			{
 				OnEnterPit(this);
 			}
+
+			AudioManager.Instance.PlayPit();
 		}
 	}
 
